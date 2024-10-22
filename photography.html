@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography📸</title>
+    <style>
+      div {
+        display: block;
+        margin: 0 auto;
+        padding: 40px;
+        border-radius: 40px;
+        width: 50%;
+        background: linear-gradient(
+          68.6deg,
+          rgb(252, 165, 241) 1.8%,
+          rgb(181, 255, 255) 100.5%
+        );
+      }
+
+      h1 {
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 40px;
+        padding: 5px;
+        margin: 20px 20px 10px 20px;
+      }
+      h2 {
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 30px;
+        padding: 10px;
+        color: #25161b;
+      }
+      hr {
+        background-color: #f70776;
+        height: 0.5px;
+      }
+      .text {
+        line-height: 1.5;
+        font-size: 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      a {
+        font-size: 16px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-style: italic;
+        text-decoration: none;
+        color: black;
+        transition: all 150ms ease-in-out;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #900048;
+      }
+      .photo {
+        width: 350px;
+        display: block;
+        margin: 10px auto;
+        border-radius: 5px;
+      }
+      .tips {
+        text-align: center;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        border: 1px solid #6643b5;
+        border-radius: 4px;
+      }
+      .galery {
+        display: block;
+        width: 250px;
+        margin: 25px auto;
+        border-radius: 12px;
+        border: 4px groove #9d53c3;
+      }
+      .invitation {
+        text-align: center;
+      }
+      td {
+        padding: 10px;
+        margin: 10px;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        padding: 5px;
+        font-size: 16px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: 500;
+      }
+      button {
+        display: block;
+        margin: 10px auto;
+        background: #b144df;
+        color: white;
+        font-size: 18px;
+        padding: 20px;
+        border: 1px solid #b144df;
+        border-radius: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        transition: all 150ms ease-in-out;
+        box-shadow: 5px 5px 5px #d59bf6;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #b144df;
+        border: 1px solid #b144df;
+      }
+      .invitation {
+        font-size: 28px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: bolder;
+        color: #113f67;
+      }
+      .author {
+        text-align: center;
+        color: #606470;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Photography</h1>
+      <h2>The art of catching a passing moment</h2>
+      <hr />
+      <img
+        class="photo"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/609/original/unsplash-image-AM7icIpCxyY.jpg?1655488397"
+      />
+      <hr />
+      <p class="text">
+        Photography is the art of capturing light with a camera, usually via a
+        digital sensor or film, to create an image. With the right camera
+        equipment, you can even photograph wavelengths of light invisible to the
+        human eye, including UV, infrared, and radio.
+      </p>
+      <a href="https://photographylife.com/what-is-photography"> Learn more </a>
+
+      <table>
+        <tr>
+          <td>
+            <p class="tips">Essential tips 😺</p>
+            <ul>
+              <li><strong>Start</strong> With Basic Equipment</li>
+              <li><strong>Learn</strong> To Hold Your Camera Properly</li>
+              <li><strong>Master</strong> The Camera Settings</li>
+              <li><strong>Use</strong> Appropriate Lens</li>
+              <li><strong>Use</strong> Automatic Mode</li>
+              <li><strong>Work</strong> On The Visuals</li>
+              <li><strong>Focus</strong> On Prime Area And Visualize</li>
+              <li><strong>Focus</strong> On Lighting</li>
+              <li>
+                <strong>Don't</strong> Underexpose Or Overexpose The Highlights
+              </li>
+              <li><strong>Hold</strong> Your Camera Still</li>
+            </ul>
+          </td>
+          <td>
+            <img
+              class="galery"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/406/original/Figure1_Yates.jpg?1656080329"
+            />
+
+            <img class ="galery"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/407/original/f92edba8f13f7a1566ebd87578ba52d5.jpg?1656080414"/>
+          </td>
+        </tr>
+      </table>
+      <p class="invitation">You can do it too!</p>
+      <button>Join our course📸</button>
+      <br />
+      <p class="author">Created by Ewa Szymik</p>
+    </div>
+    <script>
+      function joinCourse() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let status = prompt("Are you a beginner?");
+        status = status.toLowerCase();
+
+        if (status === "yes") {
+          alert("Hi " + name + "! You can join the beginners' course😺");
+        } else {
+          alert("Hi " + name + "! You can join the advanced course🐯");
+        }
+      }
+      let joinCourseButton = document.querySelector("button");
+      joinCourseButton.addEventListener("click", joinCourse);
+    </script>
+  </body>
+</html>
